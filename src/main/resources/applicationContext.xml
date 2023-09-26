@@ -9,6 +9,7 @@
 
     <bean id="myPerson"
           class="ru.aykononov.spring.introduction.Person">
-        <constructor-arg ref="myPet"></constructor-arg>
+<!--        <constructor-arg ref="myPet"></constructor-arg>-->
+        <property name="pet" ref="myPet"></property>
     </bean>
 </beans>
