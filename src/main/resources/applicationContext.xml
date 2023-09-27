@@ -9,7 +9,12 @@
 
     <bean id="myPerson"
           class="ru.aykononov.spring.introduction.Person">
-<!--        <constructor-arg ref="myPet"></constructor-arg>-->
+        <!-- урок 7 - DI внедрение с помощью конструктора -->
+ <!--        <constructor-arg ref="myPet"></constructor-arg>-->
+        <!-- урок 8 - DI внедрение с помощью сеттеров -->
         <property name="pet" ref="myPet"></property>
+        <!-- урок 9 - DI внедрение других значений -->
+        <property name="surname" value="Zaur"></property>
+        <property name="age" value="33"></property>
     </bean>
 </beans>
