@@ -1,11 +1,11 @@
-package ru.aykononov.spring.introduction;
+package ru.aykononov.spring.lesson16;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class Test15 {
+public class Test16 {
     public static void main(String[] args) {
-        var context = new ClassPathXmlApplicationContext("application14.xml");
-        var person = context.getBean("personBean", Person.class);
+        var context = new ClassPathXmlApplicationContext("application16.xml");
+        var person = context.getBean("personBean16", Person16.class);
         person.callYourPet();
         context.close();
     }
@@ -14,6 +14,7 @@ public class Test15 {
 /*
 Bean Cat is created
 Bean Person is created
+Class Person: set Pet
 Hello, my lovely Pet!
 Maow-Maow
  */

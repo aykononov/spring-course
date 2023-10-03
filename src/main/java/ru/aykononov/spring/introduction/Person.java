@@ -1,9 +1,5 @@
 package ru.aykononov.spring.introduction;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-
-@Component("personBean")
 public class Person {
     private String surname;
 
@@ -15,7 +11,6 @@ public class Person {
         System.out.println("Bean Person is created");
     }
 
-    @Autowired
     public Person(Pet pet) {
         System.out.println("Bean Person is created");
         this.pet = pet;
