@@ -12,7 +12,7 @@ public class Dog implements Pet {
     }
 
     public Dog() {
-        System.out.println("Dog bean is created");
+        System.out.println("Bean Dog is created");
     }
 
     @Override

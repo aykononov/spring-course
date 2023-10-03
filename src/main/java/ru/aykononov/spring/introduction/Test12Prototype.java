@@ -4,7 +4,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Test12Prototype {
     public static void main(String[] args) {
-        var context = new ClassPathXmlApplicationContext("applicationPrototype.xml");
+        var context = new ClassPathXmlApplicationContext("application12Prototype.xml");
         var dog1 = context.getBean("myPet", Dog.class);
         var dog2 = context.getBean("myPet", Dog.class);
         System.out.println("dog1 == dog2 is " + (dog1 == dog2));

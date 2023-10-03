@@ -4,7 +4,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Test12Singleton {
     public static void main(String[] args) {
-        var context = new ClassPathXmlApplicationContext("applicationSingleton.xml");
+        var context = new ClassPathXmlApplicationContext("application12Singleton.xml");
         var dog1 = context.getBean("myPet", Dog.class);
         var dog2 = context.getBean("myPet", Dog.class);
         System.out.println("dog1 == dog2 is " + (dog1 == dog2));
