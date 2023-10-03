@@ -1,22 +1,28 @@
 package ru.aykononov.spring.introduction;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component("personBean")
 public class Person {
     private String surname;
 
     private int age;
 
     private Pet pet;
+
     public Person() {
-        System.out.println("Person bean is created");
+        System.out.println("Bean Person is created");
     }
 
+    @Autowired
     public Person(Pet pet) {
-        System.out.println("Person bean is created");
+        System.out.println("Bean Person is created");
         this.pet = pet;
     }
 
     public void setPet(Pet pet) {
-        System.out.println("Person: set Pet");
+        System.out.println("Class Person: set Pet");
         this.pet = pet;
     }
 
@@ -32,13 +38,14 @@ public class Person {
     public int getAge() {
         return age;
     }
+
     public void setSurname(String surname) {
-        System.out.println("Person: set surname");
+        System.out.println("Class Person: set surname");
         this.surname = surname;
     }
 
     public void setAge(int age) {
-        System.out.println("Person: set age");
+        System.out.println("Class Person: set age");
         this.age = age;
     }
 }
