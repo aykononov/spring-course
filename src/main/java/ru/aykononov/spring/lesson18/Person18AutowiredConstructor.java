@@ -7,10 +7,10 @@ import ru.aykononov.spring.introduction.Pet;
 
 @Component("personBeanConstructor")
 public class Person18AutowiredConstructor {
-    private Pet pet;
+    private final Pet pet;
 
     @Autowired
-    public Person18AutowiredConstructor(@Qualifier("catBean")Pet pet) {
+    public Person18AutowiredConstructor(@Qualifier("catBean") Pet pet) {
         System.out.println("Bean PersonAutowiredConstructor is created");
         this.pet = pet;
     }
